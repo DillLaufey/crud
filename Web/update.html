@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <form class="m-52">
+      <div
+        class="max-w-300 border-2 border-black-100 p-4 flex flex-col justify-center items-center gap-5"
+      >
+        <div>
+          <label for="title">Title</label>
+          <input
+            class="w-full border-2 border-blue-400 p-1 text-lg"
+            type="text"
+            name=""
+            id="title"
+          />
+        </div>
+
+        <div>
+          <label for="rd">Release-date</label>
+          <input
+            class="w-full border-2 border-blue-400 p-1 text-lg"
+            type="text"
+            name=""
+            id="rd"
+          />
+        </div>
+        <div>
+          <label for="image">Image</label>
+          <input
+            class="w-full border-2 border-blue-400 p-1 text-lg"
+            type="text"
+            name=""
+            id="image"
+          />
+        </div>
+        <div>
+          <label for="developer">Developer</label>
+          <input
+            class="w-full border-2 border-blue-400 p-1 text-lg"
+            type="text"
+            name=""
+            id="developer"
+          />
+        </div>
+        <input
+          type="submit"
+          value="Update"
+          class="w-full bg-green-300 rounded mt-4 p-4 hover:bg-green-500"
+        />
+      </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/crud.js"></script>
+    <script src="./scripts/update.js"></script>
+  </body>
+</html>
